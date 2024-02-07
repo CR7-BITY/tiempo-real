@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1c243f;
+    font-family: 'Poppins';
+}
+
+h1{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fefffb;
+}
+.services-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.services h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fefffb;
+    margin-bottom: 45px;
+}
+
+
+.services-card{
+    display: flex;
+    background-color: #151c25;
+    padding: 15px 20px;
+    align-items: flex-start;
+    border-radius: 25px;
+    width: 500px;
+    margin-bottom: 35px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.services-card img{
+    width: 25px;
+    margin-right: 25px;
+}
+
+.card-txt{
+    text-align: left;
+}
+
+.card-txt h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fefffb;
+    margin-bottom: 10px;
+}
+
+.card-txt p{
+    font-size: 16px;
+    color: #8d8d8d;
+    margin-bottom: 10px;
+}
+
+.card-txt a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fefffb;
+}
+
+.services-txt{
+    display: grid;
+    grid-template-columns: repeat(
+        2, 1fr
+    );
+    column-gap: 3rem;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 35px;
+    color: #fefffb;
+    border-radius: 25px;
+    background: linear-gradient(
+        90deg,
+        rgba(131,45,153,1) 33%,
+        rgba(193,58,143,1) 69%,
+        rgba(196,37,116,1) 100%
+    );
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 991px) {
+    h1{
+        padding: 10px 0px;
+    }
+    .services-txt{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services-card{
+        width: 400px;
+        padding: 15px 10px;
+    }
+}

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1c243f;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    text-align: center;
+    padding: 20px 0px;
+    color: blanchedalmond;
+}
+
+.videos{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video{
+    width: 70%;
+    height: auto;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width: 991px){
+
+    h1{
+        font-size: 25px;
+        padding: 10px 0px;
+        margin: auto;
+        width: 70%;
+    }
+
+    video{
+        width: 90%;
+    }
+}
